@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/shorturl
+    userName: rajkumar
+    password: Password01
+    platform: postgres
+  jpa:
+    hibernate:
+      # The property spring.jpa.hibernate.ddl-auto is important.
+      # It tries to validate the database schema according to the entities
+      # that you have created in the application and throws an error if the schema
+      # does not match the entity specifications.
+      ddl-auto: validate
+      generate-ddl: true
+      show-sql: true
+
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect # The SQL dialect makes Hibernate generate better SQL for the chosen database
+        format_sql: true
+    flayway:
+      baselineOnMigrate: true
+      check-location: true
+      locations: classpath:db/migration
+      enabled: true
+      #schemas: myblogdb if you want to create database schema but you have to annotate your entity class with @Table(schema ="myblogdb") or @Table(catalog ="myblogdb")
+    database: postgresql

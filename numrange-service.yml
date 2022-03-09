@@ -25,3 +25,6 @@ spring:
       enabled: true
       #schemas: myblogdb if you want to create database schema but you have to annotate your entity class with @Table(schema ="myblogdb") or @Table(catalog ="myblogdb")
     database: postgresql
+
+test:
+  name: testingRefresScope

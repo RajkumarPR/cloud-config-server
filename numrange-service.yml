@@ -27,4 +27,5 @@ spring:
     database: postgresql
 
 test:
-  name: testingRefresScope
+  name: testingRefresScopeWithBus
+

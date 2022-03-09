@@ -27,4 +27,4 @@ spring:
     database: postgresql
 
 test:
-  name: testingRefresScope1Testingaksdja
+  name: testingRefresScope

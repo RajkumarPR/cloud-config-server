@@ -1,7 +1,7 @@
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/numrange
-    userName: rajkumar
+    userName: postgres
     password: Password01
     platform: postgres
   jpa:
